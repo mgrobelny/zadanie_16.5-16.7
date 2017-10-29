@@ -6,17 +6,18 @@ import uuid from 'uuid';
 import { AppContainer } from 'react-hot-loader';
 
 ReactDOM.render(
-    <App />,
+    <AppContainer>
+      <App />
+    </AppContainer>,
     document.getElementById('app')
 );
 
 if (module.hot) {
   module.hot.accept('./containers/App', () => {
-    const NextApp = require('./containers/App').default;
     ReactDOM.render(
-            <AppContainer>
-                <NextApp />
-            </AppContainer>,
+      <AppContainer>
+        <App />
+      </AppContainer>,
       document.getElementById('app')
     );
   });
