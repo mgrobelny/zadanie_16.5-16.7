@@ -1,0 +1,15 @@
+button {
+	margin-left: 20px;
+	cursor: pointer;
+	border: 1px solid gray;
+	background-color: transparent;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+body, button {
+	font-family: Calibri;
+}
+button:hover {
+	color: white;
+	background-color: gray;
+}
